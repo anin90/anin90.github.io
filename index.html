@@ -17,14 +17,30 @@
 .topnav a {float: left; color: #ADD8E6; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
 .topnav a:hover {background-color: #ddd; color: black;}
 .topnav a.active {background-color: #04AA6D; color: white;}
+.dropdown {float: left; overflow: hidden;}
+.dropdown .dropbtn {font-size: 17px; border: none; outline: none; color: #ADD8E6; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: inherit;}
+.dropdown:hover .dropbtn {background-color: #ddd; color: black;}
+.dropdown-content {display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+.dropdown-content a {float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left;}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
 </style>
 
 <!--Navigation bar-->
 	<div class="topnav">
 		<a class="active" href="index.html">Home</a>
 		<a href="diving.html">Diving</a>
-		<a href="gallery.html">Gallery</a>
+  		<div class="dropdown">
+    		<button class="dropbtn">Gallery</button>
+   		<div class="dropdown-content">
+      		<a href="images/gallery_recent.html">2019-Present</a>
+      		<a href="images/gallery_16_18.html">2016-18</a>
+      		<a href="images/gallery_12_16.html">2012-16</a>
+    	</div>
+  		</div> 
+		</div>    
 	</div><P> 
+
 
 <!--DP-->
 	<a title="Kodaikanal Aug, 2021" rel="nofollow"><img src="https://i.ibb.co/4J3N98v/ani-kodai-dp-2.jpg" 
