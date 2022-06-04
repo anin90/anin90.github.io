@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a { color: #ffec33; } /* CSS link color */
+</style>
+<body style="font-family:'Times new roman'">
+<h3 style="background-color:black;color:white;font-weight: normal">
+<style>
+
+table {
+  font-family: Times new roman;
+  border-collapse: collapse;
+  background-color:black;
+  color: white;
+  font-weight: normal
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 3px;
+}
+
+</style>
+</head>
+
+<P>
+
+<table id="myTable">
+  <tr>
+  
+    <th onclick="sortTable(0)"><font color="ffb233"><B>Series <button onclick="sortTable()">Sort alphabetically</button></B></font></th>
+    
+    <th onclick="sortTable(1)"><font color="ffb233"><B>Season <button onclick="sortTable()">Sort</button></B></font></th>
+    
+    <th onclick="sortTable(2)"><font color="ffb233"><B>Episode <button onclick="sortTable()">Sort</button></B></font></th>
+    
+    <th onclick="sortTable(2)"><font color="ffb233"><B>Status <button onclick="sortTable()">Sort</button></B></font></th>
+    
+        <th onclick="sortTable(2)"><font color="ffb233"><B>Season due <button onclick="sortTable()">Sort</button></B></font></th>
+  
+  </tr>
+  
+  <tr>
+    <td>Breaking Bad</td>
+    <td>Done</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  
+  <tr>
+    <td>Sherlock</td>
+    <td>S2</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  
+  <tr>
+    <td>Turn: Washington's Spies</td>
+    <td>S3</td>
+    <td>E3</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  
+  <tr>
+    <td>Cosmos: A Spacetime Odyssey</td>
+    <td>Done</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  
+  <tr>
+    <td>HIMYM</td>
+    <td>S5</td>
+    <td>E2</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  
+  <tr>
+    <td>Friends</td>
+    <td>Done</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  
+  <tr>
+    <td>Orphan Black</td>
+    <td>S4</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  
+  <tr>
+    <td>La Casa de Papel</td>
+    <td>S4</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>May 2021</td>
+  </tr>
+  
+  <tr>
+    <td>Dark</td>
+    <td>S1</td>
+    <td>E2</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>The Mandalorian</td>
+    <td>S2</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Better Call Saul</td>
+    <td>S5</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>2022</td>
+    
+    <tr>
+    <td>Fauda</td>
+    <td>S2</td>
+    <td>E3</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Four More Shots Please!</td>
+    <td>S1</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Mindhunter</td>
+    <td>S2</td>
+    <td>E6</td>
+    <td>Paused</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Ozark</td>
+    <td>S3</td>
+    <td>E4</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>The Queen's Gambit</td>
+    <td>Done</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Fargo</td>
+    <td>S3</td>
+    <td>E3</td>
+    <td>Paused</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Manhunt</td>
+    <td>S1</td>
+    <td>E3</td>
+    <td>Paused</td>
+    <td>-</td>
+    
+    <tr>
+    <td>WandaVision</td>
+    <td>Done</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Falcon & winter soldier</td>
+    <td>Done</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>House of Cards</td>
+    <td>S1</td>
+    <td>E3</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Peaky Blinders</td>
+    <td>S1</td>
+    <td>E2</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Snowfall</td>
+    <td>S1</td>
+    <td>E8</td>
+    <td>Paused</td>
+    <td>-</td>
+    
+    <tr>
+    <td>When Heroes Fly</td>
+    <td>S1</td>
+    <td>Done</td>
+    <td>-</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Homeland</td>
+    <td>S3</td>
+    <td>E9</td>
+    <td>Watching</td>
+    <td>-</td>
+    
+    <tr>
+    <td>Elite</td>
+    <td>S2</td>
+    <td>E1</td>
+    <td>Watching</td>
+    <td>-</td>
+    
+  </tr>
+
+</table>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+</h3>
+</body>
+</html>
