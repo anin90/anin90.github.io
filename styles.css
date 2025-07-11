@@ -1,4 +1,6 @@
-/* General page styles */
+/* ===========================================
+   GENERAL PAGE STYLES
+=========================================== */
 body {
   font-family: "Times New Roman", serif;
   margin: 0;
@@ -7,9 +9,12 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* ===========================================
+   LINKS
+=========================================== */
 /* Light mode link color */
 a {
-  color: #0645AD; /* standard blue, change as you prefer */
+  color: #0645AD; /* standard blue */
 }
 
 /* Dark mode link color */
@@ -17,15 +22,15 @@ body.dark-mode a {
   color: #81aaff; /* lighter blue for dark background */
 }
 
-
-/* Navigation bar */
+/* ===========================================
+   NAVIGATION BAR
+=========================================== */
 .topnav {
   overflow: hidden;
   background-color: #f1f1f1;
   text-align: left; /* align items left */
   padding-left: 7px; /* matches image left padding */
 }
-
 
 .topnav a {
   display: inline-block;
@@ -45,6 +50,9 @@ body.dark-mode a {
   color: white;
 }
 
+/* ===========================================
+   DROPDOWN MENU
+=========================================== */
 .dropdown {
   display: inline-block;
   position: relative;
@@ -86,34 +94,45 @@ body.dark-mode a {
   display: block;
 }
 
-/* Main content */
+/* ===========================================
+   MAIN CONTENT
+=========================================== */
 .content {
   width: 80%;
   margin: auto;
   padding: 20px;
   font-size: 1.5em;
-  text-align: justify;
+  text-align: left;
 }
 
+/* ===========================================
+   PROFILE IMAGE
+=========================================== */
 img.profile {
   float: left;
-  width: 210px;
+  width: 230px;
   height: auto;
   padding-right: 15px;
   padding-left: 7px;
   margin-top: 0;
 }
 
+/* ===========================================
+   LINKS ICON SPACING
+=========================================== */
 .links i {
   margin-right: 10px;
 }
 
-/* Dark mode styles */
+/* ===========================================
+   DARK MODE STYLES
+=========================================== */
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
 }
 
+/* Navigation bar dark mode */
 .dark-mode .topnav {
   background-color: #333;
 }
@@ -132,6 +151,7 @@ body.dark-mode {
   color: white;
 }
 
+/* Dropdown dark mode */
 .dark-mode .dropdown-content {
   background-color: #444;
 }
