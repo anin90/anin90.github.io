@@ -1,71 +1,113 @@
-<html>
-<head>	
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<style>a { color: auto; } /* CSS link color */img {  } </style>
-<body style="font-family:'Times new roman'; margin:0;"> 
-<h3 style="background-color:GhostWhite; color:auto; font-family: 'Helvetica', serif; font-weight:bold; 
-						font-size:160%; width:70%; margin:auto; height:100%; overflow: auto; line-height: 1.3;
-						text-align:justify;">				
-<title>Anirudh's Home</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===========================================
+       HEAD: Meta, Title, External CSS Links
+  ============================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anirudh's Home</title>
 
-<style>
-.topnav {overflow: hidden; background-color: auto;}
-.topnav a {float: left; color: black; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 30px;}
-.topnav a:hover {background-color: #ddd; color: black;}
-.topnav a.active {background-color: crimson; color: white;}
-.dropdown {float: left; overflow: hidden;}
-.dropdown .dropbtn {font-size: 21px; border: none; outline: none; color: #ADD8E6; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: inherit;}
-.dropdown:hover .dropbtn {background-color: #ddd; color: black;}
-.dropdown-content {display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
-.dropdown-content a {float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left;}
-.dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}
-</style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
 
-<!--Navigation bar-->
-	<div class="topnav">
-		<a class="active" href="index.html">Home</a>
-		<a href="interests.html">Interests</a>
-  		<div class="dropdown">
-    		<!--<button class="dropbtn">Science</button>-->
-   		<div class="dropdown-content">
-      		<a href="images/gallery_recent.html">2019-Present</a>
-      		<a href="images/gallery_16_18.html">2016-18</a>
-      		<a href="images/gallery_12_16.html">2012-16</a>
-    	</div>
-  		</div> 
-		</div>    
-	</div><P> 
+  <!-- Academicons CSS -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+</head>
 
-<!--DP-->
-	<a title="@ Sloan Kettering, NYC, Oct-2023" rel="nofollow"><img src="images/Sridharan, Anirudh-231024-03_RT.jpg"
-	style="float:left; width:190px; height:auto; padding-right:15px; padding-left:7px; margin-top:0px; "></a>
+<body>
+  <!-- ===========================================
+       NAVIGATION BAR
+  ============================================ -->
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="interests.html">Interests</a>
 
-<!--Introduction-->
-	Hey! Welcome. Myself <b><font color="auto">anirudh,</font></b>
-	<A HREF="https://en.wikipedia.org/wiki/Tamil_language" style="text-decoration:none;"></A><P>
-	<span style="font-weight:normal">
-	I'm a computational postdoc with the <A HREF="https://www.mskcc.org/"> Memorial Sloan Kettering Cancer Center</A> in New York. 
-	I study <u><font color="auto">tumor metabolism</font></u> via computational and data-driven ways. 
-	I'm however excited about the implications of metabolism at all scales of biology.<br><br>
-	Previously, I was a graduate student with the <A HREF="https://nimhans.ac.in/">National Institute of Mental Health and Neuro Sciences (NIMHANS)</A>, Bangalore.
-	<P><P>	
-	<font color="auto"><B>Interests: </B></font><span style="font-weight:normal">computational biology, metabolism<P>
+    <!-- GALLERY DROPDOWN (currently hidden) -->
+    <!--
+    <div class="dropdown">
+      <button class="dropbtn">Gallery</button>
+      <div class="dropdown-content">
+        <a href="images/gallery_recent.html">2019-Present</a>
+        <a href="images/gallery_16_18.html">2016-18</a>
+        <a href="images/gallery_12_16.html">2012-16</a>
+      </div>
+    </div>
+    -->
 
-<!--Link to cv/twitter/google-scholar/git-->
-	<A HREF="https://drive.google.com/file/d/15-CVXjcoo4V81zfoNr-uljWvTzlEGYtB/view"><i class="ai ai-cv ai-3x"></i></A>
-	<A HREF="https://scholar.google.co.in/citations?user=L5pj7qYAAAAJ&hl=en"><i class="ai ai-google-scholar ai-3x"></i></A>
+    <!-- DARK MODE TOGGLE BUTTON -->
+    <button onclick="toggleDarkMode()" style="float:right; padding:14px 16px; font-size:34px; background:none; border:none; cursor:pointer;">
+      🌓
+    </button>
+  </div>
 
-<!--mail-ID-->
-	<P>Email: <span style="font-weight:normal"> anin90@gmail.com (or) sridhaa@mskcc.org
-	<P>Twitter: <span style="font-weight:normal"><A HREF="https://twitter.com/anirudhsc"> https://twitter.com/anirudhsc
+  <!-- ===========================================
+       MAIN CONTENT: Profile Image + Intro Text
+  ============================================ -->
+  <div class="content">
+    <!-- PROFILE IMAGE -->
+    <a title="@ Sloan Kettering, NYC, Oct-2023" rel="nofollow">
+      <img src="images/Sridharan, Anirudh-231024-03_RT.jpg" class="profile" alt="Anirudh at Sloan Kettering">
+    </a>
 
-</P><P>
+    <!-- INTRODUCTION -->
+    <p>Hey! Welcome. I'm <strong>Anirudh</strong>.</p>
 
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-<script src="https://unpkg.com/ionicons@4.5.9-1/dist/ionicons.js"></script>
+    <p>
+      I'm a computational postdoc at the
+      <a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a> in New York, 
+      focusing on <u>cancer metabolism</u> through data-driven ways.
+      More broadly, I'm fascinated by how metabolism shapes biology across scales – from cells to physiology and behavior.
+    </p>
 
-</h3>        
+    <p>
+      Earlier, I was a graduate student at the
+      <a href="https://nimhans.ac.in/">National Institute of Mental Health and Neuro Sciences (NIMHANS)</a> in Bangalore, 
+      involved with psychiatry research.
+    </p>
 
+    <p>
+      <strong>Interests:</strong> bioinformatics
+    </p>
+
+    <!-- ===========================================
+         LINKS: CV, Google Scholar
+    ============================================ -->
+	<p class="links">
+	  <a href="CV_LINK" target="_blank"><i class="ai ai-cv ai-2x"></i></a>
+	  <a href="SCHOLAR_LINK" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
+	</p>
+
+    <!-- ===========================================
+         CONTACT INFO
+    ============================================ -->
+    <p>Email: anin90@gmail.com (or) sridhaa@mskcc.org</p>
+    <p>
+      Twitter: <a href="https://x.com/AniRude95" target="_blank">@AniRude95</a>
+    </p>
+  </div>
+
+  <!-- ===========================================
+       SCRIPTS: Ionicons + Dark Mode Script
+  ============================================ -->
+  <!-- Ionicons -->
+  <script src="https://unpkg.com/ionicons@4.5.9-1/dist/ionicons.js"></script>
+
+  <!-- Dark mode script -->
+  <script>
+    // Check saved preference on page load
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+  </script>
 </body>
 </html>
