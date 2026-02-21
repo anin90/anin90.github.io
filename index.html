@@ -37,10 +37,29 @@
     </div>
     -->
 
-    <!-- DARK MODE TOGGLE BUTTON -->
+    <!-- DARK MODE Default -->
+    <script>
+			// Default to dark unless explicitly disabled
+			if (localStorage.getItem('darkMode') !== 'disabled') {
+			document.body.classList.add('dark-mode');
+		}
+
+			function toggleDarkMode() {
+			document.body.classList.toggle('dark-mode');
+	
+			if (document.body.classList.contains('dark-mode')) {
+			localStorage.setItem('darkMode', 'enabled');
+		} else {
+			localStorage.setItem('darkMode', 'disabled');
+			}
+		}
+	</script>
+	
+	<!-- DARK MODE TOGGLE BUTTON -->
     <button onclick="toggleDarkMode()" style="float:right; padding:14px 16px; font-size:34px; background:none; border:none; cursor:pointer;">
       🌓
     </button>
+    
   </div>
 
   <!-- ===========================================
