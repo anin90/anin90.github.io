@@ -39,7 +39,6 @@
 
     <!-- DARK MODE Default -->
     <script>
-			// Default to dark unless explicitly disabled
 			if (localStorage.getItem('darkMode') !== 'disabled') {
 			document.body.classList.add('dark-mode');
 		}
@@ -63,48 +62,52 @@
   </div>
 
   <!-- ===========================================
-       MAIN CONTENT: Profile Image + Intro Text
+       MAIN CONTENT: SPLIT IMAGE + TEXT
   ============================================ -->
   <div class="content">
-    <!-- PROFILE IMAGE -->
-    <a title="NY, 2024" rel="nofollow">
-      <img src="images/img12.jpg" class="profile" alt="Anirudh at Sloan Kettering">
-    </a>
 
-    <!-- INTRODUCTION -->
-    <p>Hey! Welcome. I'm <strong>Anirudh</strong>.</p>
+    <div class="split">
 
-    <p>
-      I’m a postdoc at
-      <a href="https://www.columbia.edu/">Columbia University</a> in New York. 
-      I'm a computational biologist interested in how metabolism interfaces with cell state. 
-    </p>
+      <!-- PROFILE IMAGE -->
+      <div class="image-box">
+        <a title="NY, 2024" rel="nofollow">
+          <img src="images/img12.jpg" class="profile" alt="Anirudh at Sloan Kettering">
+        </a>
+      </div>
 
-    <p>
-      Earlier, I was a postdoc with Memorial Sloan Kettering's
-      <a href="https://www.mskcc.org/">Computational Oncology Program</a>.
-    </p>
+      <!-- TEXT CONTENT -->
+      <div class="text-box">
 
-    <p>
-      And prior to that, I was a graduate student at the
-      <a href="https://www.cbmnimhans.org/">Centre for Brain and Mind, NIMHANS</a> in Bangalore, India.
-    </p>
+        <!-- INTRODUCTION -->
+        <p>Hey! Welcome. I'm <strong>Anirudh</strong>.</p>
 
-    <!-- ===========================================
-         LINKS: CV, Google Scholar
-    ============================================ -->
-	<p class="links">
-	  <a href="https://docs.google.com/document/d/1d-XrSWA_Cm9XZC3s6HZBH3vr4y8467Ss/edit?usp=drive_link&ouid=112520757155648999272&rtpof=true&sd=true" target="_blank" title="my CV"><i class="ai ai-cv ai-3x"></i></a>
-	  <a href="https://scholar.google.co.in/citations?user=L5pj7qYAAAAJ&hl=en" target="_blank" title="my google scholar"><i class="ai ai-google-scholar ai-3x"></i></a>
-	</p>
+        <p>
+          I’m a computational biologist at
+          <a href="https://www.columbia.edu/">Columbia University</a>
+          with interests in metabolism. I study how caloric restriction shapes metabolism, 
+          and how these changes translate into improved clinical outcomes.
+        </p>
 
-    <!-- ===========================================
-         CONTACT INFO
-    ============================================ -->
-    <p>Email: anin90@gmail.com (or) as8146@cumc.columbia.edu</p>
-    <p>
-      Twitter: <a href="https://x.com/AniRude95" target="_blank">@AniRude95</a>
-    </p>
+        <!-- ===========================================
+             LINKS: CV, Google Scholar
+        ============================================ -->
+	    <p class="links">
+	      <a href="https://docs.google.com/document/d/1d-XrSWA_Cm9XZC3s6HZBH3vr4y8467Ss/edit?usp=drive_link&ouid=112520757155648999272&rtpof=true&sd=true" target="_blank" title="my CV"><i class="ai ai-cv ai-3x"></i></a>
+	      <a href="https://scholar.google.co.in/citations?user=L5pj7qYAAAAJ&hl=en" target="_blank" title="my google scholar"><i class="ai ai-google-scholar ai-3x"></i></a>
+	    </p>
+
+        <!-- ===========================================
+             CONTACT INFO
+        ============================================ -->
+        <p>Email: anin90@gmail.com (or) as8146@cumc.columbia.edu</p>
+        <p>
+          Twitter: <a href="https://x.com/@aniisnotreal" target="_blank">@aniisnotreal</a>
+        </p>
+
+      </div>
+
+    </div>
+
   </div>
 
   <!-- ===========================================
@@ -115,7 +118,6 @@
 
   <!-- Dark mode script -->
   <script>
-    // Check saved preference on page load
     if (localStorage.getItem('darkMode') === 'enabled') {
       document.body.classList.add('dark-mode');
     }
