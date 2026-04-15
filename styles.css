@@ -109,7 +109,7 @@ body.dark-mode a {
    SPLIT LAYOUT (NEW)
 =========================================== */
 .split {
-  display: flex;
+  display: flex !important;   /* force flex on GitHub */
   gap: 30px;
   align-items: flex-start;
 }
